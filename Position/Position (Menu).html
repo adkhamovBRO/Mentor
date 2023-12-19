@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Position (Menu)</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="My Logo.jpg">	
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}	
+		.container{
+			width: 1240px;
+			margin: 140px 400px;
+		}
+		.level_1{
+			list-style: none;
+		}
+		.Main_menu{
+			width: 200px;
+			float: left;
+			position: relative;
+		}
+		.Main_menu a{
+			width: 200px;
+			color: slateblue;
+			background-color: aqua;
+			display: block;
+			text-align: center;				
+			line-height: 60px;
+			font-size: 25px;
+		}
+		.Main_menu a:hover{
+			color: red;
+			background-color: honeydew; 
+		}
+        .level_2{
+        	list-style: none;
+        	display: none;
+        	position: absolute;
+        }
+        .level_1 .Main_menu:hover .level_2{
+        	display: block;
+        }
+        .level_3{
+			list-style: none;
+			display: none;
+		    position: absolute;
+			float: left;
+			left: 200px;
+			top: 0;
+			bottom: 10px;
+		}
+		.level_2 .Main_menu:hover .level_3{
+			display: block;
+			color: red;
+		}
+         .level_4{
+            list-style: none;
+            display: none;
+            position: absolute;
+            float: left;
+            left: 195px;
+            top: 0;
+            bottom: 5px;
+        }
+        .level_3 .Main_menu:hover .level_4{
+            display: block;
+        }
+        .tozalash{
+        	clear: both;
+        }
+	</style>
+</head>
+<body>
+      <div class="container">
+ 			<ul class="level_1">
+                <li class="Main_menu"><a href="#">Telegram</a>
+                	<ul class="level_2">
+                		<li class="Main_menu"><a href="#">News</a>
+                			<ul class="level_3">
+                				<li class="Main_menu"><a href="#">News_1</a>
+                                    <ul class="level_4">
+                                        <li><a href="#">Empty</a></li>
+                                        <li><a href="#">Empty</a></li>
+                                        <li><a href="#">Empty</a></li>
+                                    </ul>
+                                </li>
+                				<li class="Main_menu"><a href="#">News_2</a>
+                                    <ul class="level_4">
+                                        <li><a href="#">Empty</a></li>
+                                        <li><a href="#">Empty</a></li>
+                                        <li><a href="#">Empty</li>
+                                    </ul>
+                                </li>
+                				<li><a href="#">News_3</a></li>
+                			</ul>
+                		</li>
+                		<li><a href="#">News</a></li>
+                		<li class="Main_menu"><a href="#">News</a>
+                			<ul class="level_3">
+                				<li><a href="#">Empty Page</a></li>
+                				<li><a href="#">Empty Page</a></li>
+                				<li><a href="#">Empty Page</a></li>
+                			</ul>
+                		</li> 
+                	</ul>
+                </li>
+                <li class="Main_menu"><a href="#">Instagram</a></li>
+            
+				<li class="Main_menu"><a href="#">Threads</a>
+                	<ul class="level_2">
+                		<li><a href="#">Empty</a></li>
+                		<li class="Main_menu"><a href="#">Empty</a>
+                			<ul class="level_3">
+                				<li><a href="#">Empty</a></li>
+                				<li class="Main_menu"><a href="#">Empty</a>
+                                    <ul class="level_4">
+                                        <li><a href="#">Empty</a></li>
+                                        <li><a href="#">Empty</a></li>
+                                        <li><a href="#">Empty</a></li>
+                                    </ul>
+                                </li>
+                				<li class="Main_menu"><a href="#">Empty</a>
+                                    <ul class="level_4">
+                                        <li><a href="#">Empty</a></li>
+                                        <li><a href="#">Empty</a></li>
+                                        <li><a href="#">Empty</a></li>
+                                    </ul>
+                                </li>
+                			</ul>
+                		</li>
+                		<li><a href="#">Empty</a></li>
+                	</ul>
+                </li>
+ 			</ul>
+ 			<div class="tozalash"></div>
+	  </div>
+</body>
+</html>
